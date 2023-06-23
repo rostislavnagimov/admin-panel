@@ -1,0 +1,88 @@
+.UserItem {
+  display: flex;
+  width: 85vw;
+  flex-direction: row;
+  height: 15vh;
+  margin: 1vh 0;
+  padding-left: 5vw;
+  background-color: white;
+}
+
+.UserItem:hover {
+  background-color: whitesmoke;
+}
+
+.UserItem * {
+  margin: 1vh;
+}
+
+.UserItem img {
+  width: 13vh;
+  height: 13vh;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.UserItem__permissions {
+  display: flex;
+  flex-direction: row;
+}
+
+.UserItem__permissions div{
+  padding: 1vh;
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.UserItem__permissions div:hover{
+  border: 1px solid rgb(157, 0, 255);
+  color: rgb(157, 0, 255);
+}
+
+.UserItem__name {
+  font-weight: 700;
+}
+
+.UserItem__email {
+  color: gray;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.UserItem__options {
+  font-weight: 900;
+  color: grey;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.UserItem__options--list {
+  height: fit-content;
+  background-color: white;
+  margin-left: auto;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  padding: 1vh 1vw;
+}
+
+.UserItem__options--list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.UserItem__options--list--placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
