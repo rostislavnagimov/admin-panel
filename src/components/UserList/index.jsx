@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useState, useContext} from 'react'
 import Context from '../../helpers/context'
 import UserItem from '../UserItem'
 import styles from './index.module.css'
@@ -22,7 +22,7 @@ const UserList = () => {
       <div className={styles['UserList__scrollable']}>
         {Object.keys(store.state).map((user, index) => {
           return (
-          <UserItem user={store.state[user]} key={index}/>
+          <UserItem user={store.state[user]} key={index} />
         )})}
       </div>
 
